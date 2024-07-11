@@ -6,5 +6,6 @@ def parse_args():
     parser.add_argument('output_file', type=str, help='Path to the output file')
     return parser.parse_args()
 
-args = parse_args()
-print(f"Input File: {args.input_file}, Output File: {args.output_file}")
+if __name__ == "__main__":
+    args = parse_args()
+    print(f"Input File: {args.input_file}, Output File: {args.output_file}")
